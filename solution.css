@@ -1,22 +1,25 @@
-#outer-box {
-  background-color: purple;
+/* Group */
+h1,
+h2 {
+  color: blueviolet;
 }
 
-.box {
-  background-color: blue;
-  padding: 10px;
+/* Child */
+.box > p {
+  color: firebrick;
 }
 
-.inner-box {
-  background-color: red;
+/* Descendent */
+.box li {
+  color: blue;
 }
 
-p {
-  color: yellow;
-  margin: 0;
-  padding: 0;
+/* Chained */
+li.done {
+  color: green;
 }
 
-.white-text {
-  color: white;
+/* Multiple Combiners */
+ul p.done {
+  font-size: 0.5rem;
 }
